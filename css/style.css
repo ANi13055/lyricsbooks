@@ -98,13 +98,6 @@ li a:active {
     color: rgb(7, 7, 56);
 }
 
-
-.step::before {
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-
 .step h1 {
     font-size: 45px;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
@@ -120,6 +113,7 @@ li a:active {
 .step p {
     font-size: medium;
     margin: 10px 15px 0;
+    text-align: center;
 }
 
 
@@ -132,7 +126,6 @@ li a:active {
 }
 
 .service h1 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     text-align: center;
     color: rgb(1, 32, 17);
     font-size: x-large;
@@ -249,7 +242,10 @@ li a:active {
         width: 60px;
         height: auto;
     }
-
+    
+    #home {
+        height: 100vh;
+    }
     .service {
         height: 100vh;
     }
@@ -275,7 +271,11 @@ li a:active {
     .carousel-control-next {
         height: 30vh;
     }
-
+    
+    .contact {
+        height: 100vh;
+        text-align: center;
+    }
     .contact p {
         margin: 0 10px;
     }
