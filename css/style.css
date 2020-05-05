@@ -1,0 +1,288 @@
+/* navigation bar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    overflow: hidden;
+}
+
+body {
+    width: 100%;
+    background: linear-gradient(45deg, purple, skyblue, Blue, tomato) no-repeat;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: rgba(50, 50, 50, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 5vh;
+    z-index: 999;
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 5px 0px 5px auto;
+}
+
+li {
+    font-size: 15px;
+    padding: 10px;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+li a,
+.btn a,
+.box a {
+    padding: 5px;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+li a {
+    margin-left: 25px;
+    color: white;
+    font-weight: bold;
+    border-bottom: 2px solid rgb(255, 65, 125);
+    border-top: 2px solid rgb(255, 65, 125);
+    outline: none;
+    transition: background 0.3s ease-out;
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+li a:hover,
+.btn:hover,
+li a:active {
+    color: rgb(255, 65, 125);
+    background: whitesmoke;
+}
+
+#logo img {
+    width: 70px;
+}
+
+/* step bar */
+.step {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    align-items: center;
+    height: 100vh;
+}
+
+.step .btn {
+    padding: 7px 10px;
+    border: 2px solid;
+    background-color: rgb(7, 7, 56);
+    color: white;
+    margin: 47px;
+    font-size: 17px;
+    border-radius: 30px
+}
+
+.btn:hover {
+    background: #ffffff;
+    color: rgb(7, 7, 56);
+}
+
+
+.step::before {
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.step h1 {
+    font-size: 45px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-bottom: 20px;
+}
+
+.step h2 {
+    margin-top: 20vh;
+    font-size: larger;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.step p {
+    font-size: medium;
+    margin: 10px 15px 0;
+}
+
+
+/* service section */
+.service {
+    height: 115vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.service h1 {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    text-align: center;
+    color: rgb(1, 32, 17);
+    font-size: x-large;
+    font-weight: 600;
+    color: white;
+}
+
+.service p {
+    text-align: center;
+    margin: 0 15px 20px;
+    font: medium;
+    color: whitesmoke;
+}
+
+.card-container {
+    margin: 10px auto;
+}
+
+.card {
+    width: 18rem;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+}
+
+.card-title {
+    letter-spacing: 1px;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 yellow;
+    transition: ease-out 0.4s;
+}
+
+.c1 {
+    width: 130px;
+}
+
+.c2 {
+    width: 100px;
+}
+
+.card-title a:hover {
+    color: white;
+}
+
+.c1:hover {
+    box-shadow: inset 130px 0 0 0 rgb(255, 65, 125);
+    padding-left: 5px;
+}
+
+.c2:hover {
+    box-shadow: inset 110px 0 0 0 rgb(252, 38, 0);
+    padding-left: 5px;
+}
+
+.carousel {
+    width: 18rem;
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    height: 40vh;
+}
+
+/* contact */
+.contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    color: #ffffff;
+}
+
+.contact a {
+    margin-top: 20px;
+    background: rgb(7, 7, 56);
+    color: #ffffff;
+    padding: 5px 10px;
+    border: 2px solid;
+    border-radius: 30px;
+}
+
+/*----------Media Queries----------*/
+/* Large Devices, Wide Screens */
+@media screen and (max-width: 1200px) {}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {}
+
+/* Small Devices, Tablets */
+@media screen and (max-width: 768px) {
+    body {
+        box-sizing: border-box;
+    }
+
+    nav {
+        align-items: center;
+    }
+
+    nav ul {
+        margin: 5px 0px 5px auto;
+    }
+
+    nav ul li {
+        font-size: 13px;
+        font-weight: 700;
+    }
+
+    nav li a {
+        margin-left: initial;
+    }
+
+    #logo img {
+        width: 60px;
+        height: auto;
+    }
+
+    .service {
+        height: 110vh;
+    }
+
+    .service h1 {
+        margin-top: 10px;
+    }
+
+    .service p {
+        font-size: 1em;
+    }
+
+    .card-container {
+        margin: 10px auto;
+        width: 80vw;
+    }
+
+    .card {
+        height: 60vh;
+    }
+
+    .carousel-control-prev,
+    .carousel-control-next {
+        height: 30vh;
+    }
+
+    .contact p {
+        margin: 0 10px;
+    }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {}
