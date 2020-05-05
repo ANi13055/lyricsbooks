@@ -10,6 +10,7 @@
 body {
     width: 100%;
     background: linear-gradient(45deg, purple, skyblue, Blue, tomato) no-repeat;
+    font-family: 'Ubuntu', sans-serif;
 }
 
 nav {
@@ -107,7 +108,6 @@ li a:active {
 .step h2 {
     margin-top: 20vh;
     font-size: larger;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 .step p {
