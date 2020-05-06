@@ -63,7 +63,7 @@ li a {
     border-bottom-right-radius: 10px;
 }
 
-li.active {
+li a.active {
     color: rgb(255, 65, 125);
     background: whitesmoke;
 }
