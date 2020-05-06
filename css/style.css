@@ -63,9 +63,15 @@ li a {
     border-bottom-right-radius: 10px;
 }
 
+li.active {
+    color: rgb(255, 65, 125);
+    background: whitesmoke;
+}
+
+
 li a:hover,
-.btn:hover,
-li a:active {
+.btn:hover {
+
     color: rgb(255, 65, 125);
     background: whitesmoke;
 }
